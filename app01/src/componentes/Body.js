@@ -1,6 +1,7 @@
 import React from "react";
 import Dados from "./Dados";
 import Relogio from "./Relogio";
+import State from "./State";
 
 export default function Body() { // Alterado de Corpo para Body
     const Insta=()=>{
@@ -23,6 +24,7 @@ export default function Body() { // Alterado de Corpo para Body
         Time='Timão'
         somar={somar}
          />
+        <State/>
       </section>
     );
   }
