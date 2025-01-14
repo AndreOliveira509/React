@@ -5,7 +5,9 @@ import './App.css'
 // import Cor from "./componentes/Cor";
 // import Lista from "./componentes/lista";
 // import Forms from "./componentes/Forms";
-import State from "./componentes/State";
+// import State from "./componentes/State";
+// import ElevacaoState from "./componentes/ElevacaoState";
+import Contencao from "./componentes/contencao";
 
 export default function App() {
 
@@ -26,8 +28,9 @@ export default function App() {
       <Lista/> */}
       {/* <br/>
       <Forms/> */}
-      <State/>
-
+      {/* <State/> */}
+      {/* <ElevacaoState/> */}
+      <Contencao/>
     </>
   );
 }   
