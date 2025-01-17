@@ -4,6 +4,7 @@ import React from "react";
 // import UseEffect from "./componentes/UseEffect";
 // import LocalStorage from "./componentes/LocalStore";
 import Classe from "./componentes/Classe"
+import VarGlobais from "./componentes/VarGlobais";
 import './App.css'
 
 
@@ -17,7 +18,8 @@ export default function App() {
       <Body/> */}
       {/* <UseEffect/> */}
       {/* <LocalStorage/> */}
-      <Classe/>
+      {/* <Classe/> */}
+      <VarGlobais/>
     </>
   );
 } 
