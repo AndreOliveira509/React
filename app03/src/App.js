@@ -1,7 +1,8 @@
-import React,{useState, useEffect} from "react";
+import React from "react";
 // import Pagina1 from "./componentes/pagina1";
 // import Pagina2 from "./componentes/pagina2";
-import PricCar from "./componentes/princCar"
+// import PricCar from "./componentes/princCar"
+import Calc from "./componentes/calc";
 import './App.css'
 
 export default function App() {
@@ -42,7 +43,8 @@ export default function App() {
     {/* {retornarPagina()} */}
     {/* <button onClick=''>Página 1</button>
     <button onClick=''>Página 2</button> */}
-    <PricCar/>
+    {/* <PricCar/> */}
+    <Calc/>
     </>
   );
 }   
