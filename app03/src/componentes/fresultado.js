@@ -1,9 +1,14 @@
-import React,{useState} from "react";
+import React from "react";
 
-export default function Fpeso(props){
+export default class fresultado extends React.Component{
+    constructor(props){
+        super(props)
+    }
+    render(){
     return(
         <>
-            <p>Resultado:{props.r}</p>
+            <p>Resultado:{this.props.r}</p>
         </>
     )
+}
 }
