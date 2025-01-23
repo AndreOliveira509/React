@@ -2,7 +2,9 @@ import React from "react";
 // import Pagina1 from "./componentes/pagina1";
 // import Pagina2 from "./componentes/pagina2";
 // import PricCar from "./componentes/princCar"
-import Calc from "./componentes/calc";
+// import Calc from "./componentes/calc";
+// import Calculadora from "./calculadora/calculadora";
+import Jogodavelha from "./jogodavelha/jogodavelha";
 import './App.css'
 
 export default function App() {
@@ -44,7 +46,9 @@ export default function App() {
     {/* <button onClick=''>Página 1</button>
     <button onClick=''>Página 2</button> */}
     {/* <PricCar/> */}
-    <Calc/>
+    {/* <Calc/> */}
+    {/* <Calculadora/> */}
+    <Jogodavelha/>
     </>
   );
 }   
