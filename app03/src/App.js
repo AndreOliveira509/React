@@ -6,6 +6,7 @@ import React from "react";
 import Calculadora from "./calculadora/calculadora";
 // import Jogodavelha from "./jogodavelha/jogodavelha";
 import './App.css'
+import ListaCarros from "./componentes/listaCarros";
 
 export default function App() {
  
@@ -47,8 +48,9 @@ export default function App() {
     <button onClick=''>Página 2</button> */}
     {/* <PricCar/> */}
     {/* <Calc/> */}
-    <Calculadora/>
+    {/* <Calculadora/> */}
     {/* <Jogodavelha/> */}
+    <ListaCarros/>
     </>
   );
 }   
