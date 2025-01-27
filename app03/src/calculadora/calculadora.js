@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import Tela from "./tela";
 
 export default function Calculadora(){
     
@@ -8,15 +9,6 @@ export default function Calculadora(){
     const [operado, setOperado]=useState(false)
 
 // componentes
-
-    const Tela=(valor, res)=>{
-        return(
-            <div style={cssTela}>
-                <span style={cssTelaOper}>{valor}</span>
-                <span style={cssTelaRes}>{res}</span>
-            </div>
-        )
-    }
 
     const Bnt=(label, onClick)=>{
         return(
@@ -125,8 +117,8 @@ const addDigitoTela = (d) => {
     return(
         <>
             <div style={cssConteiner}>
-                <h3>Calculadora Matematica Simple</h3>
-                {Tela(valorTela, resultado)}
+                <h3>Calculadora Matematica Simples</h3>
+                <Tela cssTela={cssTela} cssTelaOper={cssTelaOper} cssTelaRes={cssTelaRes} valor={valorTela} res={resultado}/>
                 <div style={cssBotoes}>
                     {Bnt('AC', limparMemoria)}
                     {Bnt('(', ()=>addDigitoTela('('))}
@@ -148,7 +140,6 @@ const addDigitoTela = (d) => {
                     {Bnt('.', ()=>addDigitoTela('.'))}
                     {Bnt('<-', ()=>Operacao('bs'))}
                     {Bnt('=', ()=>Operacao('='))}
-
                 </div>
             </div>
         </>

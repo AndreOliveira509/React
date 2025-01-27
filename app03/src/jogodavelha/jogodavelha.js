@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Tabuleiro from "./tabuleiro";
 
 export default function Jogodavelha() {
     // Estilos
@@ -20,26 +21,6 @@ export default function Jogodavelha() {
     const [jogo, setJogo] = useState(jogoInicial);
     const [simboloAtual, setSimboloAtual] = useState('X');
     const [jogando, setJogando] = useState(true);
-
-    // Tabuleiro
-    const tabuleiro = (j) => (
-        <div style={tabu}>
-            {j.map((linha, lIndex) => (
-                <div style={tabuLinha} key={lIndex}>
-                    {linha.map((coluna, cIndex) => (
-                        <div
-                            style={casa}
-                            data-pos={`${lIndex}${cIndex}`}
-                            onClick={(e) => joga(e)}
-                            key={cIndex}
-                        >
-                            {coluna}
-                        </div>
-                    ))}
-                </div>
-            ))}
-        </div>
-    );
 
     const BtnJogarNovamente = () => (
         !jogando && <button onClick={() => reniciar()}>Jogar Novamente</button>
@@ -130,7 +111,7 @@ export default function Jogodavelha() {
             <div>
                 <p>Vez de: {simboloAtual}</p>
             </div>
-            <div>{tabuleiro(jogo)}</div>
+            <Tabuleiro tabu={tabu} c={casa} tabul={tabuLinha} jg={joga} j={jogo}/>
             <div>{BtnJogarNovamente()}</div>
         </>
     );
